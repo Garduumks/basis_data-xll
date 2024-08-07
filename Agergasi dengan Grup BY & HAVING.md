@@ -6,6 +6,7 @@
 desc pegawai;
 ~~~
 **Hasilnya :
+
 ![](gambar/desc.png)
 
 **Kesimpulan :**
@@ -21,6 +22,7 @@ select * from pegawai;
 ~~~
 
 **Hasil :**
+
 ![](gambar/select.png)
 
 **Kesimpulan :**
