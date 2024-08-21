@@ -138,7 +138,7 @@ SELECT NoCab,COUNT(NIP) AS jumlah_pegawai
 **hasilnya:** berdasarkan 9 barisan data, masing-masing nilai dalam kolom `NoCab` dikelompokkan berdasarkan nilainya sendiri. jadi `NoCab` C101 bersama `NoCab` yang nilainya sama yaitu C101. jadi `NoCab` yang memiliki C101 ada 2, C102 ada 3, C103 ada 2, C104 ada 2. total semuanya 9, sesuai dengan jumlah data yang ada. adapun nama dari kolom hasil yaitu jumlah_pegawai dari perintah `AS`. 
 
 ## 4.
-**GAMBAR : 
+**GAMBAR**: 
 ![](gambar/4.PNG)
 
 *STRIKTUR :*
@@ -166,7 +166,7 @@ GROUP BY NoCab HAVING COUNT(NIP) >= 3;
     - *COUNT(NIP) >= 3*: Menyaring kelompok cabang yang memiliki jumlah pegawai lebih dari atau sama dengan tiga. Hanya cabang-cabang yang memenuhi kondisi ini yang akan ditampilkan dalam hasil query.
 
 ## 5.
-**GAMBAR : 
+**GAMBAR** : 
 ![](gambar/5.PNG)
 
 *STRIKTUR :*
@@ -184,7 +184,7 @@ FROM pegawai;
     - Menunjukkan bahwa data yang akan diambil berasal dari tabel pegawai.
 
 ## 6.
-**GAMBAR : 
+**GAMBAR** : 
 ![](gambar/6.PNG)
 
 *STRIKTUR :*
@@ -206,7 +206,7 @@ SELECT SUM(Gaji) AS Gaji_Manager
     - Menetapkan kondisi filter untuk query. Hanya baris yang memiliki nilai Jabatan sama dengan 'Manager' yang akan dihitung. Dengan kata lain, hanya pegawai dengan jabatan 'Manager' yang akan dihitung total gajinya.
 
 ## 7.
-**GAMBAR : 
+**GAMBAR** : 
 ![](gambar/7.PNG)
 
 *STRIKTUR :*
@@ -230,7 +230,7 @@ GROUP BY NoCab;
     - Mengelompokkan hasil berdasarkan nilai dalam kolom NoCab. Ini memastikan bahwa perhitungan SUM(Gaji) dilakukan secara terpisah untuk setiap nilai unik di kolom NoCab, yaitu setiap cabang.
 
 ## 8.
-**GAMBAR : 
+**GAMBAR** : 
 ![](gambar/8.PNG)
 
 *STRIKTUR :*
@@ -257,7 +257,7 @@ GROUP BY NoCab HAVING SUM(Gaji) >= 8000000;
     - *SUM(Gaji) >= 8000000*: Menyaring hasil agar hanya cabang-cabang yang memiliki total gaji 8.000.000 atau lebih yang ditampilkan.
 
 ## 9.
-**GAMBAR : 
+**GAMBAR**: 
 ![](gambar/9.PNG)
 
 *STRIKTUR :*
@@ -274,7 +274,7 @@ FROM pegawai;
 - *FROM pegawai*:
     - Menunjukkan bahwa data yang akan diambil berasal dari tabel pegawai.
 ## 10.
-**GAMBAR : 
+**GAMBAR**: 
 ![](gambar/11.PNG)
 
 *STRIKTUR :*
@@ -296,7 +296,7 @@ WHERE Jabatan = 'Manajer';
     - Menetapkan kondisi filter sehingga hanya pegawai yang memiliki nilai Jabatan sama dengan 'Manager' yang dihitung. Ini berarti hanya gaji dari pegawai dengan jabatan 'Manager' yang akan dimasukkan dalam perhitungan rata-rata.
 
 ## 11.
-**GAMBAR : 
+**GAMBAR**: 
 ![](gambar/12.PNG)
 
 *STRIKTUR :*
@@ -319,7 +319,7 @@ GROUP BY NoCab;
     - *GROUP BY*: Digunakan untuk mengelompokkan baris-baris yang memiliki nilai kolom yang sama. Dalam hal ini, data akan dikelompokkan berdasarkan kolom NoCab. Setiap grup berisi baris-baris dengan nilai NoCab yang sama.
     - Setelah pengelompokan, fungsi agregat (seperti AVG) diterapkan pada setiap grup.
 ## 12.
-**GAMBAR : 
+**GAMBAR** : 
 ![](gambar/13.PNG)
 
 *STRIKTUR :*
@@ -346,7 +346,7 @@ GROUP BY NoCab HAVING NoCab = 'C101' OR NoCab = 'C102';
     - Dalam konteks ini, HAVING membatasi hasil query hanya pada grup-grup di mana NoCab adalah 'C101' atau 'C102'.
     - Ini berbeda dari WHERE karena WHERE digunakan sebelum pengelompokan, sedangkan HAVING digunakan setelah pengelompokan.
 ## 13.
-**GAMBAR : 
+**GAMBAR** : 
 ![](gambar/14.PNG)
 
 *STRIKTUR :*
@@ -363,7 +363,7 @@ FROM pegawai;
 - *FROM pegawai*:
     - *FROM pegawai*: Bagian ini menentukan dari tabel mana data akan diambil. Dalam hal ini, data diambil dari tabel pegawai.
 ## 14.
-**GAMBAR : 
+**GAMBAR** : 
 ![](gambar/15.PNG)
 
 *STRIKTUR :*
@@ -403,7 +403,7 @@ GROUP BY NoCab;
 - `GROUP BY NoCab`: Ini mengelompokkan hasil berdasarkan `NoCab`kolom, artinya untuk setiap `NoCab`, kueri akan mengembalikan gaji maksimum dan minimum.
 
 ## 16.
-**GAMBAR : 
+**GAMBAR** : 
 ![](gambar/17.PNG)
 
 *STRIKTUR :*
@@ -428,7 +428,7 @@ GROUP BY NoCab HAVING COUNT(NIP) >= 3;
 - *HAVING COUNT(NIP) >= 3*:
     - *HAVING COUNT(NIP) >= 3*: Kondisi ini menyaring hasil grup yang memenuhi kriteria tertentu. Dalam hal ini, hanya cabang yang memiliki jumlah pegawai (dihitung berdasarkan NIP, yang merupakan Nomor Induk Pegawai) sebanyak tiga atau lebih yang akan dimasukkan dalam hasil.
 ## 17.
-**GAMBAR : 
+**GAMBAR** : 
 ![](gambar/18.PNG)
 
 *STRIKTUR :*
@@ -457,7 +457,7 @@ FROM pegawai;
 - *FROM pegawai*:
     - Bagian ini menunjukkan tabel sumber data yang digunakan, yaitu tabel pegawai. Semua operasi perhitungan (COUNT, SUM, AVG, MAX, MIN) akan dilakukan berdasarkan data yang ada di tabel ini.
 ## 18.
-**GAMBAR : 
+**GAMBAR** : 
 ![](gambar/19.PNG)
 
 *STRIKTUR :*
