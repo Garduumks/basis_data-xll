@@ -1,6 +1,6 @@
 # DESC
 *STRUKTUR "*
-SQL
+~~~SQL
 CREATE TABLE pegawai (
 -> NIP INT PRIMARY KEY,
 -> NDep VARCHAR(255) NOT NULL,
@@ -12,7 +12,7 @@ Jabatan ENUM('Manager', 'Supervisor', 'Staff'),
     Gaji BIGINT NOT NULL,
     NoCab VARCHAR(255) NOT NULL
 );
-
+~~~
 
 *PENJELASAN :*
 - *NIP INT PRIMARY KEY*:
@@ -138,10 +138,11 @@ SELECT NoCab,COUNT(NIP) AS jumlah_pegawai
 **hasilnya:** berdasarkan 9 barisan data, masing-masing nilai dalam kolom `NoCab` dikelompokkan berdasarkan nilainya sendiri. jadi `NoCab` C101 bersama `NoCab` yang nilainya sama yaitu C101. jadi `NoCab` yang memiliki C101 ada 2, C102 ada 3, C103 ada 2, C104 ada 2. total semuanya 9, sesuai dengan jumlah data yang ada. adapun nama dari kolom hasil yaitu jumlah_pegawai dari perintah `AS`. 
 
 ## 4.
-**GAMBAR**: 
-![](gambar/4.PNG)
+**hasil**: 
 
-*STRIKTUR :*
+![](gambar/4.png)
+
+**contoh:**
 ~~~sql
 SELECT NoCab, COUNT(NIP) AS Jumlah_pegawai
 FROM pegawai
@@ -149,21 +150,17 @@ GROUP BY NoCab HAVING COUNT(NIP) >= 3;
 ~~~
 
 
-*PENJELASAN :* 
-- *SELECT NoCab, COUNT(NIP) AS Jumlah_pegawai*:
-    - *NoCab*: Memilih kolom NoCab yang biasanya menunjukkan kode cabang tempat pegawai bekerja.
-    - *COUNT(NIP)*: Menghitung jumlah baris atau records berdasarkan kolom NIP. Karena NIP biasanya merupakan identifikasi unik untuk setiap pegawai, ini menghitung jumlah pegawai.
-    - *AS Jumlah_pegawai*: Memberikan alias Jumlah_pegawai pada hasil hitungan ini, untuk memberi nama yang lebih deskriptif pada kolom hasil.
-    
-- *FROM pegawai*:
-    - Menunjukkan bahwa data yang akan diambil berasal dari tabel pegawai.
-
-- *GROUP BY NoCab*:
-    - Mengelompokkan hasil berdasarkan nilai dalam kolom NoCab. Ini memastikan bahwa penghitungan COUNT(NIP) dilakukan secara terpisah untuk setiap cabang.
-    
-- *HAVING COUNT(NIP) >= 3*:
-    - *HAVING*: Digunakan untuk menetapkan kondisi pada kelompok data setelah pengelompokan dilakukan. Berbeda dengan WHERE yang digunakan sebelum pengelompokan, HAVING berlaku setelah GROUP BY.
-    - *COUNT(NIP) >= 3*: Menyaring kelompok cabang yang memiliki jumlah pegawai lebih dari atau sama dengan tiga. Hanya cabang-cabang yang memenuhi kondisi ini yang akan ditampilkan dalam hasil query.
+**analisis:** 
+- `select`=untuk memilih kolom mana saja yang ingin dihitung atau ditampilkan
+- `NoCab`=merupakan nama kolom yang ingin ditampilkan
+- `count(nip)`=untuk menghitung jumlah barisan data yang mempunyai isi data dari kolom yang dipilih `nip`nip adalah nama kolom yang di pilih untuk dihitung
+- `as`=untuk mengubah nama dari suatu kolom untuk sementara
+- `jumalah_pegawai`=nama sementara dari kolom hasil count(nip)
+- `from pegawai`=untuk memilih dari table mana yang data kolomnya ingin digunakan `pegawai`adalah nama table yang dipilih untuk digunakan
+- `GROUP BY`=untuk mengelmpokan data berdasarkan nilai data yang telah ditentukan pada kolom yang dipilih
+- `NoCab`=nama kolom yang dipilih untuk mengelompokan data
+- `Having`=untuk menentukan kondisi (yang harus dipenuhi) oleh suatu kelompok data agar bisa ditampilkan
+- `(count(nip) >=3)`=merupakan suatu kondisi yang harus di penuhi oleh suatu kelompok data jadi hanya kelompok data yang hasilnya hitungannya lebih atau sama dengan 3
 
 ## 5.
 **GAMBAR** : 
@@ -455,7 +452,7 @@ FROM pegawai;
     - Bagian ini mencari dan menampilkan gaji terendah (minimum) di antara semua pegawai yang ada di tabel pegawai. Hasilnya akan ditampilkan dengan nama alias GajiMin.
 
 - *FROM pegawai*:
-    - Bagian ini menunjukkan tabel sumber data yang digunakan, yaitu tabel pegawai. Semua operasi perhitungan (COUNT, SUM, AVG, MAX, MIN) akan dilakukan berdasarkan data yang ada di tabel ini.
+     Bagian ini menunjukkan tabel sumber data yang digunakan, yaitu tabel pegawai. Semua operasi perhitungan (COUNT, SUM, AVG, MAX, MIN) akan dilakukan berdasarkan data yang ada di tabel ini.
 ## 18.
 **GAMBAR** : 
 ![](gambar/19.PNG)
