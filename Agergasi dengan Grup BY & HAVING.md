@@ -164,7 +164,8 @@ GROUP BY NoCab HAVING COUNT(NIP) >= 3;
 
 ## 5.
 **GAMBAR** : 
-![](gambar/5.PNG)
+
+![](gambar/5.png)
 
 *STRIKTUR :*
 ```sql
