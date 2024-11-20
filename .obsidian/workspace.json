@@ -1,0 +1,174 @@
+{
+  "main": {
+    "id": "222ceace3d424b9a",
+    "type": "split",
+    "children": [
+      {
+        "id": "c0a2677247a2aa73",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "91a0dfd726b4b8ff",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Tab baru"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "62fa519c5421444a",
+    "type": "split",
+    "children": [
+      {
+        "id": "4a60e8c391b252f3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a313925e67760049",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Penjelajah berkas"
+            }
+          },
+          {
+            "id": "833302ca2db4b4c4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Penelusuran"
+            }
+          },
+          {
+            "id": "bf9e756676144a5f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Penanda"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0ff6215a18809649",
+    "type": "split",
+    "children": [
+      {
+        "id": "79a2bced3287a076",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3e5bd110affa89a8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlink"
+            }
+          },
+          {
+            "id": "0bfb4f4a6ad6b404",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Tautan Keluar"
+            }
+          },
+          {
+            "id": "af45f6d32b26f102",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "502fcbbb1a2ae5d7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Kerangka"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Buka peralih cepat": false,
+      "graph:Buka tampilan grafik": false,
+      "canvas:Buat kanvas baru": false,
+      "daily-notes:Buka catatan hari ini": false,
+      "templates:Masukkan template": false,
+      "command-palette:Buka palet perintah": false
+    }
+  },
+  "active": "91a0dfd726b4b8ff",
+  "lastOpenFiles": [
+    "Tanpa judul.canvas",
+    "2024-11-02.md",
+    "RELASI.md",
+    "Agergasi dengan Grup BY & HAVING.md",
+    "gambar/29.png",
+    "gambar/28.png",
+    "gambar/27.png",
+    "gambar/26.png",
+    "gambar/25.png",
+    "gambar/24.png",
+    "gambar/23.png",
+    "gambar/22.png",
+    "gambar/21.png",
+    "gambar/20.png",
+    "Basis Data.md"
+  ]
+}

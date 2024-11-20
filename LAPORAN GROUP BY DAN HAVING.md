@@ -52,7 +52,7 @@ Jabatan ENUM('Manager', 'Supervisor', 'Staff'),
     - *NOT NULL*: Menandakan bahwa kolom ini harus diisi; nilai kosong (NULL) tidak diperbolehkan.
 
 *HASIL :*
-![](gambar/desc.png)
+![](assets/desc.png)
 
 # SELECT
 **Penjelasan :** Perintah `SELECT` dalam MySQL digunakan untuk mengambil data dari tabel dalam database. Ini adalah perintah dasar dan paling sering digunakan dalam SQL untuk menampilkan data. Anda bisa menggunakan `SELECT` untuk memilih kolom tertentu, menggabungkan tabel, melakukan filter data, dan banyak lagi.
@@ -64,7 +64,7 @@ select * from pegawai;
 
 **Hasil :**
 
-![](gambar/select.png)
+![](assets/select.png)
 
 **Kesimpulan :**
 Perintah `SELECT * FROM pegawai;` berguna untuk melihat seluruh data dalam tabel `pegawai` tanpa batasan atau filter. Ini adalah cara cepat untuk mendapatkan gambaran lengkap tentang data yang ada di tabel, tetapi untuk analisis yang lebih spesifik atau untuk meningkatkan performa query, sebaiknya Anda memilih kolom tertentu dan menerapkan kondisi yang sesuai.
@@ -78,7 +78,7 @@ SELECT COUNT(NIP) AS jumlahpegawai, COUNT(Jabatan) AS jumlahJabatan FROM pegawai
 ```
 
 **Hasil:**
-![](gambar/1.png)
+![](assets/1.png)
 
 **Analisis:**
 - `SELECT` = untuk memilih kolom apa saja yang ingin dipilih (untuk dihitung).
@@ -101,7 +101,7 @@ WHErE NoCab = 'C102';
 ```
 
 **hasil:**
-![](gambar/2.png)
+![](assets/2.png)
 
 **analisis:**
 - `SELECT`= untuk memilih kolom mana saja yang di ingin dipilih untuk dihitung.
@@ -124,7 +124,7 @@ SELECT NoCab,COUNT(NIP) AS jumlah_pegawai
 ```
 
 **hasil:**
-![](gambar/3.png)
+![](assets/3.png)
 
 **analisis:**
 - `SELECT`= untuk memilih kolom mana saja yang ingin dihitung atau ditampilkan.
@@ -140,7 +140,7 @@ SELECT NoCab,COUNT(NIP) AS jumlah_pegawai
 ## 4.
 **hasil**: 
 
-![](gambar/4.png)
+![](assets/4.png)
 
 **contoh:**
 ~~~sql
@@ -165,7 +165,7 @@ GROUP BY NoCab HAVING COUNT(NIP) >= 3;
 ## 5.
 **GAMBAR** : 
 
-![](gambar/5.png)
+![](assets/5.png)
 
 *STRIKTUR :*
 ```sql
@@ -183,7 +183,7 @@ FROM pegawai;
 
 ## 6.
 **GAMBAR** : 
-![](gambar/6.PNG)
+![](assets/6.PNG)
 
 *STRIKTUR :*
 ~~~sql
@@ -205,7 +205,7 @@ SELECT SUM(Gaji) AS Gaji_Manager
 
 ## 7.
 **GAMBAR** : 
-![](gambar/7.PNG)
+![](assets/7.PNG)
 
 *STRIKTUR :*
 ~~~sql
@@ -229,7 +229,7 @@ GROUP BY NoCab;
 
 ## 8.
 **GAMBAR** : 
-![](gambar/8.PNG)
+![](assets/8.PNG)
 
 *STRIKTUR :*
 ~~~sql
@@ -256,7 +256,7 @@ GROUP BY NoCab HAVING SUM(Gaji) >= 8000000;
 
 ## 9.
 **GAMBAR**: 
-![](gambar/9.PNG)
+![](assets/9.PNG)
 
 *STRIKTUR :*
 ~~~sql
@@ -273,7 +273,7 @@ FROM pegawai;
     - Menunjukkan bahwa data yang akan diambil berasal dari tabel pegawai.
 ## 10.
 **GAMBAR**: 
-![](gambar/11.PNG)
+![](assets/11.PNG)
 
 *STRIKTUR :*
 ~~~sql
@@ -295,7 +295,7 @@ WHERE Jabatan = 'Manajer';
 
 ## 11.
 **GAMBAR**: 
-![](gambar/12.PNG)
+![](assets/12.PNG)
 
 *STRIKTUR :*
 ~~~sql
@@ -318,7 +318,7 @@ GROUP BY NoCab;
     - Setelah pengelompokan, fungsi agregat (seperti AVG) diterapkan pada setiap grup.
 ## 12.
 **GAMBAR** : 
-![](gambar/13.PNG)
+![](assets/13.PNG)
 
 *STRIKTUR :*
 ~~~sql
@@ -345,7 +345,7 @@ GROUP BY NoCab HAVING NoCab = 'C101' OR NoCab = 'C102';
     - Ini berbeda dari WHERE karena WHERE digunakan sebelum pengelompokan, sedangkan HAVING digunakan setelah pengelompokan.
 ## 13.
 **GAMBAR** : 
-![](gambar/14.PNG)
+![](assets/14.PNG)
 
 *STRIKTUR :*
 ~~~sql
@@ -362,7 +362,7 @@ FROM pegawai;
     - *FROM pegawai*: Bagian ini menentukan dari tabel mana data akan diambil. Dalam hal ini, data diambil dari tabel pegawai.
 ## 14.
 **GAMBAR** : 
-![](gambar/15.PNG)
+![](assets/15.PNG)
 
 *STRIKTUR :*
 ~~~sql
@@ -385,7 +385,7 @@ WHERE jabatan = `manajer`;
 
 ## 15.
 **hasil:**
-![](gambar/16.png)
+![](assets/16.png)
 **contoh:**
 ```sql
 SELECT NoCab, MAX(Gaji) AS GajiTerbesar, MIN(Gaji) AS GajiTerkecil
@@ -402,7 +402,7 @@ GROUP BY NoCab;
 
 ## 16.
 **GAMBAR** : 
-![](gambar/17.PNG)
+![](assets/17.PNG)
 
 *STRIKTUR :*
 ~~~sql
@@ -427,7 +427,7 @@ GROUP BY NoCab HAVING COUNT(NIP) >= 3;
     - *HAVING COUNT(NIP) >= 3*: Kondisi ini menyaring hasil grup yang memenuhi kriteria tertentu. Dalam hal ini, hanya cabang yang memiliki jumlah pegawai (dihitung berdasarkan NIP, yang merupakan Nomor Induk Pegawai) sebanyak tiga atau lebih yang akan dimasukkan dalam hasil.
 ## 17.
 **GAMBAR** : 
-![](gambar/18.PNG)
+![](assets/18.PNG)
 
 *STRIKTUR :*
 ~~~sql
@@ -456,7 +456,7 @@ FROM pegawai;
      Bagian ini menunjukkan tabel sumber data yang digunakan, yaitu tabel pegawai. Semua operasi perhitungan (COUNT, SUM, AVG, MAX, MIN) akan dilakukan berdasarkan data yang ada di tabel ini.
 ## 18.
 **GAMBAR** : 
-![](gambar/19.PNG)
+![](assets/19.PNG)
 
 *STRIKTUR :*
 ~~~sql
@@ -494,3 +494,4 @@ GROUP BY NoCab HAVING SUM(Gaji) <= 2600000;
 
 - *HAVING SUM(Gaji) <= 2600000*:
     - Bagian ini menetapkan kondisi setelah pengelompokan, yaitu hanya cabang-cabang yang memiliki total gaji kurang dari atau sama dengan 2.600.000 yang akan ditampilkan dalam hasil akhir query. Kondisi ini digunakan setelah pengelompokan karena HAVING digunakan untuk menyaring hasil setelah agregasi (seperti SUM).
+
