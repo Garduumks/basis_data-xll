@@ -11,10 +11,14 @@
             "id": "91a0dfd726b4b8ff",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Ujian.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Tab baru"
+              "title": "Ujian"
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Ujian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlink"
+              "title": "Backlink pada Ujian"
             }
           },
           {
@@ -155,6 +160,14 @@
   },
   "active": "91a0dfd726b4b8ff",
   "lastOpenFiles": [
+    "~$Ujian.pdf",
+    "Ujian.pdf",
+    "LAPORAN GROUP BY DAN HAVING.md",
+    "Ujian.md",
+    "assets/ujian2.png",
+    "assets/ujian1.png",
+    "assets/Cuplikan layar 2024-11-28 110457.png",
+    "assets/Cuplikan layar 2024-11-28 104312.png",
     "Tanpa judul.canvas",
     "2024-11-02.md",
     "RELASI.md",
@@ -165,10 +178,6 @@
     "gambar/26.png",
     "gambar/25.png",
     "gambar/24.png",
-    "gambar/23.png",
-    "gambar/22.png",
-    "gambar/21.png",
-    "gambar/20.png",
     "Basis Data.md"
   ]
 }
